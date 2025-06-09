@@ -6,7 +6,7 @@
   margin: 55px 0 0 0;
   width: 100%;
   height: 100vh;
-  background: url("/assets/img/bg_hero1.png") right / 75% no-repeat;
+  background: url("/assets/img/bg_hero1.webp") right / 75% no-repeat;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -17,7 +17,7 @@
   margin: 55px 0 0 0;
   width: 100%;
   height: 100vh;
-  background: url("/assets/img/bg_hero2.png") left / 75% no-repeat;
+  background: url("/assets/img/bg_hero2.webp") left / 75% no-repeat;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -72,15 +72,15 @@
 }
 
 .img1 {
-  background: url("/assets/img/servicos1.png") center / cover no-repeat;
+  background: url("/assets/img/servicos1.webp") center / cover no-repeat;
 }
 
 .img2 {
-  background: url("/assets/img/servicos2.png") center / cover no-repeat;
+  background: url("/assets/img/servicos2.webp") center / cover no-repeat;
 }
 
 .img3 {
-  background: url("/assets/img/servicos3.png") center / cover no-repeat;
+  background: url("/assets/img/servicos3.webp") center / cover no-repeat;
   max-height: 60%;
 }
 
@@ -208,10 +208,10 @@
 /* Tablet paisagem (≤1199px) */
 @media (max-width: 1199px) {
   .hero {
-    background: url("/assets/img/bg_hero1.png") right / 100vh no-repeat;
+    background: url("/assets/img/bg_hero1.webp") right / 100vh no-repeat;
   }
   .hero_pr {
-    background: url("/assets/img/bg_hero2.png") left / 100vh no-repeat;
+    background: url("/assets/img/bg_hero2.webp") left / 100vh no-repeat;
   }
 }
 
@@ -225,13 +225,13 @@
 /* Mobile grande (≤767px) */
 @media (max-width: 767px) {
   .hero {
-    background: url("/assets/img/bg_hero1.png") 200px / 100vh no-repeat;
+    background: url("/assets/img/bg_hero1.webp") 200px / 100vh no-repeat;
     align-items: center;
     text-align: center;
   }
 
   .hero_pr {
-    background: url("/assets/img/bg_hero2.png") center / 100vh no-repeat;
+    background: url("/assets/img/bg_hero2.webp") center / 100vh no-repeat;
     align-items: center;
     text-align: center;
   }

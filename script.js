@@ -1,22 +1,27 @@
-// Seleciona todos os links do menu e todas as seções
+// Seleção de elementos
 const menuLinks = document.querySelectorAll('.nav__link');
 const sections = document.querySelectorAll('section');
+const hamburgerBtn = document.querySelector('.hamburger-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
 
+// Configurações do IntersectionObserver
 const observerOptions = {
-    root: null, // viewport
+    root: null,
     rootMargin: '0px',
-    threshold: 0.5 // 50% visível
+    threshold: 0.5
 };
 
-// Callback quando a seção entra ou sai da viewport
+// Callback do observer corrigido
 const observerCallback = (entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
+            const id = entry.target.id;
+            if (!id) return;
+
             // Remove 'active' de todos os links
             menuLinks.forEach(link => link.classList.remove('active'));
 
             // Adiciona 'active' ao link correspondente
-            const id = entry.target.id;
             const activeLink = document.querySelector(`.nav__link[href="#${id}"]`);
             if (activeLink) {
                 activeLink.classList.add('active');
@@ -25,25 +30,29 @@ const observerCallback = (entries) => {
     });
 };
 
-// Cria o observer
+// Cria e configura o observer
 const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-// Observa todas as seções
 sections.forEach(section => observer.observe(section));
 
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburgerBtn = document.querySelector('.hamburger-btn');
-    const mobileMenu = document.querySelector('.mobile-menu');
+// Função para fechar o menu móvel
+const closeMobileMenu = () => {
+    mobileMenu.classList.remove('active');
+};
 
-    hamburgerBtn.addEventListener('click', function () {
-        mobileMenu.classList.toggle('active');
-    });
-
-    // Fechar o menu ao clicar em um link
-    const mobileLinks = document.querySelectorAll('.mobile-menu a');
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.remove('active');
+// Event listeners
+function initEventListeners() {
+    // Menu hamburguer
+    if (hamburgerBtn) {
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
         });
+    }
+
+    // Fechar menu ao clicar em links
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
     });
-});
+}
+
+// Inicialização quando o DOM estiver pronto
+document.addEventListener('DOMContentLoaded', initEventListeners);
