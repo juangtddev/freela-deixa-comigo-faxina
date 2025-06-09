@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Landing page apresentando a empresa Deixa Comigo, seus serviços e também apresentando um cadastro para colaboradoras."
+    />
+    <meta
+      name="keywords"
+      content="Deixa Comigo, serviços, cadastro, colaboradoras, landing page, limpeza, faxina, organização, empresa de limpeza, faxina profissional, organização de ambientes, serviços de limpeza, contratação de faxineiras, profissionais de limpeza, empresa de faxina, serviços domésticos, limpeza residencial, organização profissional, faxina rápida, limpeza eficiente"
+    />
+    <meta name="author" content="Deixa Comigo" />
+    <link rel="icon" href="/assets/icon/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/pages.css" />
+    <title>Deixa Comigo! Faxina</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar text-primary bg-white">
+        <div class="nav__logo">
+          <a href="/index.html"
+            ><img src="/assets/img/logo.svg" alt="Deixa Comigo Logo"
+          /></a>
+        </div>
+        <ul class="nav__links open-sans semi-bold">
+          <li class="ml-small mr-small">
+            <a class="nav__link active text-primary" href="#hero">Início</a>
+          </li>
+          <li class="ml-small mr-small">
+            <a class="nav__link text-primary" href="#valores">Valores</a>
+          </li>
+          <li class="ml-small mr-small">
+            <a href="#sobre" class="nav__link text-primary">Sobre Nós</a>
+          </li>
+          <li class="ml-small mr-small">
+            <a class="nav__link text-primary" href="#contato">Contato</a>
+          </li>
+          <li class="ml-small mr-small">
+            <a class="nav__link text-primary" href="/profissional.html"
+              >Trabalhe Conosco</a
+            >
+          </li>
+        </ul>
+        <!-- Botão Hamburguer (visível apenas em mobile) -->
+        <button class="hamburger-btn">
+          <span class="hamburger-icon"
+            ><img width="48px" src="/assets/icon/burger.svg" alt="Menu"
+          /></span>
+        </button>
+      </nav>
+
+      <!-- Menu Mobile (escondido por padrão) -->
+      <div class="mobile-menu">
+        <ul class="open-sans semi-bold">
+          <li>
+            <a class="nav__link active text-primary" href="#hero">Início</a>
+          </li>
+          <li><a class="nav__link text-primary" href="#valores">Valores</a></li>
+          <li><a class="nav__link text-primary" href="#sobre">Sobre Nós</a></li>
+          <li><a class="nav__link text-primary" href="#contato">Contato</a></li>
+          <li>
+            <a class="nav__link text-primary" href="/profissional.html"
+              >Trabalhe Conosco</a
+            >
+          </li>
+        </ul>
+      </div>
+      <section id="hero" class="hero">
+        <div>
+          <h1 class="poppins heading-primary text-secondary mb-small">
+            Deixa a limpeza <br />com a gente!
+          </h1>
+          <p class="open-sans text-primary mb-medium">
+            Serviços de limpeza profissional <br />para a sua casa ou empresa.
+          </p>
+          <a
+            class="btn btn__primary border-radius poppins semi-bold mt-large"
+            href="https://wa.me/5511962233345?text=Olá,%20gostaria%20de%20mais%20informações!"
+            target="_blank"
+          >
+            Agende Agora Via WhatsApp
+          </a>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="valores" class="valores">
+        <h2 class="poppins heading-secondary text-secondary mb-small">
+          Valores e Serviços
+        </h2>
+        <p class="open-sans text-primary mb-large">
+          Seu espaço impecável, sempre! Escolha entre nossas opções flexíveis.
+        </p>
+        <div class="card__container bg-white mb-large">
+          <div
+            id="card1"
+            class="card border-accent-light ml-small mr-small p-medium border-radius"
+          >
+            <h3 class="poppins heading-tertiary text-accent mb-small">
+              6 Horas
+            </h3>
+            <p class="open-sans text-primary heading-secondary semi-bold">
+              R$ 171,00*
+            </p>
+            <p
+              class="open-sans text-primary heading-tertiary regular crossed mb-small"
+            >
+              R$ 190,00
+            </p>
+            <p class="open-sans text-primary regular regular mb-medium">
+              Indicado para espaços de 55 a 80 m². Venha conhecer!
+            </p>
+            <hr class="border-accent-light mb-medium" />
+            <a
+              class="btn btn__secondary border-radius poppins semi-bold"
+              href="https://wa.me/5511962233345?text=Olá,%20gostaria%20de%20mais%20informações!"
+              target="_blank"
+            >
+              Agendar Agora
+            </a>
+          </div>
+          <div
+            id="card2"
+            class="card border-accent ml-small mr-small p-medium border-radius"
+          >
+            <h3 class="poppins heading-tertiary text-accent mb-small">
+              4 Horas
+            </h3>
+            <p class="open-sans text-primary heading-secondary semi-bold">
+              R$ 144,00*
+            </p>
+            <p
+              class="open-sans text-primary heading-tertiary regular crossed mb-small"
+            >
+              R$ 160,00
+            </p>
+            <p class="open-sans text-primary regular regular mb-medium">
+              Mais Popular! Indicado para espaços de 30 a 55 m².
+            </p>
+            <hr class="border-accent-light mb-medium" />
+            <a
+              class="btn btn__primary border-radius poppins semi-bold"
+              href="https://wa.me/5511962233345?text=Olá,%20gostaria%20de%20mais%20informações!"
+              target="_blank"
+            >
+              Agendar Agora
+            </a>
+          </div>
+          <div
+            id="card3"
+            class="card border-accent-light ml-small mr-small p-medium border-radius"
+          >
+            <h3 class="poppins heading-tertiary text-accent mb-small">
+              8 Horas
+            </h3>
+            <p class="open-sans text-primary heading-secondary semi-bold">
+              R$ 198,00*
+            </p>
+            <p
+              class="open-sans text-primary heading-tertiary regular crossed mb-small"
+            >
+              R$ 220,00
+            </p>
+            <p class="open-sans text-primary regular regular mb-medium">
+              Faxina pesada ou para espaços de 80 a 100 m². Venha conhecer!
+            </p>
+            <hr class="border-accent-light mb-medium" />
+            <a
+              class="btn btn__secondary border-radius poppins semi-bold"
+              href="https://wa.me/5511962233345?text=Olá,%20gostaria%20de%20mais%20informações!"
+              target="_blank"
+            >
+              Agendar Agora
+            </a>
+          </div>
+        </div>
+        <p class="open-sans text-primary">* Desconto no primeiro pagamento!</p>
+      </section>
+      <section id="sobre" class="sobre">
+        <div class="sobre__imagens">
+          <div class="sobre__imagens--first">
+            <div class="img1 border-radius mr-large mb-large"></div>
+            <div class="img2 border-radius mr-large"></div>
+          </div>
+          <div class="sobre__imagens--second">
+            <div class="img3 border-radius mr-large"></div>
+          </div>
+        </div>
+        <div class="sobre__textos open-sans text-primary">
+          <div>
+            <h2 class="heading-secondary text-secondary mb-small">
+              Porque nos escolher?
+            </h2>
+            <p class="mb-large">
+              Na Deixa Comigo transformamos lares e espaços comerciais em
+              ambientes limpos, aconchegantes e prontos para receber bem. Somos
+              uma empresa especializada em serviços de limpeza profissional e
+              atuamos com dedicação para garantir qualidade, agilidade e preços
+              justos. Cuidamos de cada detalhe para que você aproveite seu tempo
+              com o que realmente importa — deixando a faxina com a gente!
+            </p>
+          </div>
+          <div>
+            <p class="item mb-small">Atendimento personalizado</p>
+            <p class="item mb-small">Equipe especializada e confiável</p>
+            <p class="item mb-small">Transparência e compromisso</p>
+            <p class="item mb-small">Preços justos e acessíveis</p>
+            <p class="item mb-large">Agilidade na execução</p>
+          </div>
+          <a
+            class="btn btn__primary border-radius poppins semi-bold"
+            href="https://wa.me/5511962233345?text=Olá,%20gostaria%20de%20mais%20informações!"
+            target="_blank"
+          >
+            Agende Sua Faxina Agora Mesmo!
+          </a>
+        </div>
+      </section>
+      <section id="contato" class="contato full-height">
+        <div class="contato__container">
+          <div class="contato__texto">
+            <div>
+              <h2 class="poppins heading-secondary text-secondary mb-small">
+                Entre em Contato
+              </h2>
+              <p class="open-sans text-primary mb-large">
+                Precisa de uma faxina? Fale com a gente agora mesmo! Estamos
+                prontos para atender você com qualidade e agilidade.
+              </p>
+              <div>
+                <div class="contato__localizacao">
+                  <img
+                    src="/assets/icon/localização.svg"
+                    alt="Localização Icon"
+                    class="mb-medium mr-small"
+                  />
+                  <p
+                    class="poppins heading-quaternary semi-bold text-primary mb-small"
+                  >
+                    Localização <br />
+                    <span
+                      class="open-sans text-primary text-regular regular mb-small"
+                    >
+                      R. Francisco Barriga de Souza, 317A<br />Parque Ipe, São
+                      Paulo - SP
+                    </span>
+                  </p>
+                </div>
+                <div class="contato__telefone">
+                  <img
+                    src="/assets/icon/telefone-icon.svg"
+                    alt="Telefone Icon"
+                    class="mb-medium mr-small"
+                  />
+                  <p
+                    class="poppins heading-quaternary semi-bold text-primary mb-small"
+                  >
+                    Telefone<br />
+                    <span
+                      class="open-sans text-primary text-regular regular mb-small"
+                    >
+                      (11) 96223-3345
+                    </span>
+                  </p>
+                </div>
+                <div class="contato__email">
+                  <img
+                    src="/assets/icon/mail-icon.svg"
+                    alt="Email Icon"
+                    class="mb-medium mr-small"
+                  />
+                  <p
+                    class="poppins heading-quaternary semi-bold text-primary mb-small"
+                  >
+                    Email<br />
+                    <span
+                      class="open-sans text-primary text-regular regular mb-small"
+                    >
+                      faxinadeixacomigofaxina@gmail.com
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <a
+                class="btn btn__primary border-radius poppins semi-bold mt-small"
+                href="https://wa.me/5511962233345?text=Olá,%20gostaria%20de%20mais%20informações!"
+                target="_blank"
+              >
+                Agende Agora no WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="contato__mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.947711095002!2d-46.765185223881346!3d-23.642043564562783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53edd7239777%3A0xdd66843a91f0d0ab!2sR.%20Francisco%20Barriga%20de%20Souza%2C%20317A%20-%20Parque%20Ipe%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005762-070!5e0!3m2!1spt-BR!2sbr!4v1749479748981!5m2!1spt-BR!2sbr"
+              width="450"
+              height="340"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <hr class="divider border-accent-light mb-medium" />
+      <div class="footer mt-small open-sans text-primary">
+        <div class="footer--first">
+          <div class="footer__logo mb-small">
+            <img src="/assets/img/logo.svg" alt="Deixa Comigo Logo" />
+          </div>
+          <p class="mb-small">
+            Ambientes limpos, profissionais e seguros. Pacotes Flexíveis para o
+            seu bolso!
+          </p>
+          <p class="footer__fone mb-small">
+            <img src="/assets/icon/telefone-icon.svg" alt="" />(11) 96223-3345
+          </p>
+        </div>
+        <div class="footer__links">
+          <h3 class="mb-medium">Recursos</h3>
+          <ul>
+            <li class="mb-small">
+              <a class="text-primary" href="/index.html">Início</a>
+            </li>
+            <li class="mb-small">
+              <a class="text-primary" href="#valores">Valores</a>
+            </li>
+            <li class="mb-small">
+              <a class="text-primary" href="#sobre">Sobre Nós</a>
+            </li>
+            <li class="mb-small">
+              <a class="text-primary" href="#contato">Contato</a>
+            </li>
+            <li class="mb-small">
+              <a class="text-primary" href="/profissional.html"
+                >Trabalhe Conosco</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <h3 class="mb-medium">Nos Siga Nas Redes</h3>
+          <a href="https://www.instagram.com/deixecomigofaxina" target="_blank"
+            ><img src="/assets/icon/instagram-icon.svg" alt="Instagram Icon"
+          /></a>
+          <a
+            class="ml-small"
+            href="https://www.facebook.com/share/12KWAndeKZn/"
+            target="_blank"
+            ><img src="/assets/icon/facebook-icon.svg" alt="Facebook Icon"
+          /></a>
+          <p class="mt-small text-secondary">
+            Deixa Comigo! Faxina &copy; 2025.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
